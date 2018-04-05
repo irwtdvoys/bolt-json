@@ -1,0 +1,24 @@
+{
+    "name": "cruxoft/bolt-json",
+    "description": "JSON wrapper library built on the Bolt Framework",
+    "type": "library",
+    "license": "Apache-2.0",
+	"keywords": [
+		"bolt",
+		"json"
+	],
+	"authors": [
+		{
+			"name": "Steve Adams",
+			"role": "Developer"
+		}
+	],
+    "require": {
+        "cruxoft/bolt-core": "^0.6.0"
+    },
+	"autoload": {
+		"psr-4": {
+			"Bolt\\": "src"
+		}
+	}
+}

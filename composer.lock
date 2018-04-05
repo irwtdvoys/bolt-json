@@ -1,0 +1,61 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "214bf102159273db7010f4c37aeb6363",
+    "packages": [
+        {
+            "name": "cruxoft/bolt-core",
+            "version": "0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/irwtdvoys/bolt-core.git",
+                "reference": "9766ae41597828d4f3f27ab5b3dd0cdb71bdf833"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/irwtdvoys/bolt-core/zipball/9766ae41597828d4f3f27ab5b3dd0cdb71bdf833",
+                "reference": "9766ae41597828d4f3f27ab5b3dd0cdb71bdf833",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.8.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bolt\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Steve Adams",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Core elements for the Bolt Framework",
+            "keywords": [
+                "bolt",
+                "framework"
+            ],
+            "time": "2018-04-03T11:11:47+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
