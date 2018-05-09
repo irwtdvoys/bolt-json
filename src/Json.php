@@ -55,5 +55,19 @@
 
 			return $result;
 		}
+
+		public static function validate($data)
+		{
+			try
+			{
+				self::decode($data);
+			}
+			catch (Exception $exception)
+			{
+				return false;
+			}
+
+			return true;
+		}
 	}
 ?>
