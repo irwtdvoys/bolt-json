@@ -1,4 +1,4 @@
-# Bolt-JSON (v0.1.0)
+# Bolt-JSON (v0.2.0)
 
 ## What is it?
 
@@ -63,6 +63,22 @@ object(stdClass)#3 (1) {
   ["hello"]=>
   string(5) "world"
 }
+```
+
+### Validate
+
+```php
+use Bolt\Json;
+
+var_dump(Json::validate('{"hello":"world"}'));
+var_dump(Json::validate('{"hello":"world"x}'));
+```
+
+Outputs:
+
+```
+bool(true)
+bool(false)
 ```
 
 ### OOP
