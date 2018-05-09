@@ -65,6 +65,22 @@ object(stdClass)#3 (1) {
 }
 ```
 
+### Validate
+
+```php
+use Bolt\Json;
+
+var_dump(Json::validate('{"hello":"world"}'));
+var_dump(Json::validate('{"hello":"world"x}'));
+```
+
+Outputs:
+
+```
+bool(true)
+bool(false)
+```
+
 ### OOP
 
 The class constructor takes either encoded or decoded data and allows manipulation of the data and output.
