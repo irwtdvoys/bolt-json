@@ -1,30 +1,27 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "214bf102159273db7010f4c37aeb6363",
+    "content-hash": "d3a63d3db5402fa30f28148dd23a1518",
     "packages": [
         {
             "name": "cruxoft/bolt-core",
-            "version": "0.6.0",
+            "version": "0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/irwtdvoys/bolt-core.git",
-                "reference": "9766ae41597828d4f3f27ab5b3dd0cdb71bdf833"
+                "reference": "3d909285cf63728d1a43a3c66dad5edabc4b7381"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/irwtdvoys/bolt-core/zipball/9766ae41597828d4f3f27ab5b3dd0cdb71bdf833",
-                "reference": "9766ae41597828d4f3f27ab5b3dd0cdb71bdf833",
+                "url": "https://api.github.com/repos/irwtdvoys/bolt-core/zipball/3d909285cf63728d1a43a3c66dad5edabc4b7381",
+                "reference": "3d909285cf63728d1a43a3c66dad5edabc4b7381",
                 "shasum": ""
             },
-            "require": {
-                "php": ">=5.6"
-            },
             "require-dev": {
-                "phpunit/phpunit": "4.8.*"
+                "cruxoft/dump": "^0.2.2"
             },
             "type": "library",
             "autoload": {
@@ -47,15 +44,58 @@
                 "bolt",
                 "framework"
             ],
-            "time": "2018-04-03T11:11:47+00:00"
+            "time": "2019-09-01T11:07:21+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "cruxoft/dump",
+            "version": "0.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/irwtdvoys/dump.git",
+                "reference": "0010b53abb5fa90eadffe59a23af3b90649e4a13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/irwtdvoys/dump/zipball/0010b53abb5fa90eadffe59a23af3b90649e4a13",
+                "reference": "0010b53abb5fa90eadffe59a23af3b90649e4a13",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Cruxoft\\": "src/"
+                },
+                "files": [
+                    "src/dump.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Steve Adams",
+                    "email": "irwtdvoys@gmail.com"
+                }
+            ],
+            "description": "A system for generating structure information about nested variables for use including screen display",
+            "time": "2018-03-14T14:14:53+00:00"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "^7",
+        "ext-json": "*"
+    },
     "platform-dev": []
 }
