@@ -15,13 +15,7 @@
 
 			if (is_string($data))
 			{
-				try
-				{
-					$this->data = self::decode($data);
-				}
-				catch (\Exception $exception)
-				{
-				}
+				$this->data = $this->decode($data);
 			}
 		}
 
