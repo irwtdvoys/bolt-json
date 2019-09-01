@@ -1,4 +1,6 @@
 <?php
+	declare(strict_types=1);
+
 	namespace Bolt;
 
 	use Bolt\Exceptions\Json as Exception;
@@ -23,12 +25,12 @@
 			}
 		}
 
-		public function toString()
+		public function toString(): string
 		{
 			return self::encode($this->data);
 		}
 
-		public static function encode($data)
+		public static function encode($data): string
 		{
 			$result = json_encode($data);
 
@@ -56,7 +58,7 @@
 			return $result;
 		}
 
-		public static function validate($data)
+		public static function validate($data): bool
 		{
 			try
 			{
