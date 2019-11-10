@@ -16,7 +16,7 @@
     "require": {
 	    "php": "^7",
 	    "ext-json": "*",
-        "cruxoft/bolt-core": "^0.7.0"
+        "cruxoft/bolt-core": "^0.8.0"
     },
 	"require-dev": {
 		"cruxoft/dump": "^0.2.0"
