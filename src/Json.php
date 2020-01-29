@@ -24,9 +24,9 @@
 			return self::encode($this->data);
 		}
 
-		public static function encode($data): string
+		public static function encode($data, int $flags = 0, int $depth = 512): string
 		{
-			$result = json_encode($data);
+			$result = json_encode($data, $flags, $depth);
 
 			$error = json_last_error();
 
