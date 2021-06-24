@@ -1,4 +1,4 @@
-# Bolt-JSON (v0.3.3)
+# Bolt-JSON (v0.4.0)
 
 ## What is it?
 
