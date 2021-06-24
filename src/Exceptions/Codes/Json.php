@@ -1,7 +1,7 @@
 <?php
 	namespace Bolt\Exceptions\Codes;
 
-	use \Bolt\Codes;
+	use Bolt\Codes;
 
 	class Json extends Codes
 	{
